@@ -1,4 +1,4 @@
-# 💫 About Me:
+## 💫 About Me:
 🖥️ I’m currently working on<br>Practical software solutions, AI applications, automation & API integrations<br><br>👯 I’m looking to collaborate on<br>Open-source software, AI/automation, API-driven applications & cybersecurity projects<br><br>🤝 I’m looking for help with<br>Advanced AI/ML, secure application architecture, backend development & cybersecurity<br><br>🌱 I’m currently learning<br>Python, AI/ML, REST APIs, backend development, application security & system design<br><br>💬 Ask me about<br>Python, APIs, application development, AI assistants, automation, cybersecurity & troubleshooting<br><br>⚡ Fun fact<br>I learn best by building — I like turning ideas into working applications and figuring out how systems work behind the scenes.
 
 
