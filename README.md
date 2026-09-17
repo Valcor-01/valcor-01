@@ -6,7 +6,8 @@
 
 ![Banner](https://github.com/Valcor-01/valcor-01/blob/main/banner.png)
 
-# <h1 align="center">👋 Hi, I'm Valcor
+ <h1 align="center">👋 Hi, I'm Valcor </h1>
+ 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&lines=Software+Engineer;Open+Source+Enthusiast;Always+Learning)](https://git.io/typing-svg)   
 > “Where others see limits, I see another beginning.”
 
