@@ -48,4 +48,4 @@
 ---
 [![](https://komarev.com/ghpvc/?username=Valcor-01&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+[🐾 Pet my AI](https://valcor-01.github.io/valcor-01/pet/)   
