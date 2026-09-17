@@ -5,10 +5,8 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&lines=Software+Engineer;Open+Source+Enthusiast;Always+Learning)](https://git.io/typing-svg)   
 > “Where others see limits, I see another beginning.”
 
-
 ## 💫 About Me:
 🖥️ I’m currently working on<br>Practical software solutions, AI applications, automation & API integrations<br><br>👯 I’m looking to collaborate on<br>Open-source software, AI/automation, API-driven applications & cybersecurity projects<br><br>🤝 I’m looking for help with<br>Advanced AI/ML, secure application architecture, backend development & cybersecurity<br><br>🌱 I’m currently learning<br>Python, AI/ML, REST APIs, backend development, application security & system design<br><br>💬 Ask me about<br>Python, APIs, application development, AI assistants, automation, cybersecurity & troubleshooting<br><br>⚡ Fun fact<br>I learn best by building — I like turning ideas into working applications and figuring out how systems work behind the scenes.
-
 
 ## 🌐 Socials:
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/https://discord.gg/alonehometown) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/Valcor_01) [![Pinterest](https://img.shields.io/badge/Pinterest-%23E60023.svg?logo=Pinterest&logoColor=white)](https://pinterest.com/Valcor_01) [![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=Reddit&logoColor=white)](https://reddit.com/user/Valcor_01) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:cbwizard15@gmail.com) 
