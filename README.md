@@ -1,5 +1,5 @@
 
-![Banner](https://github.com/Valcor-01/valcor-01/blob/main/banner.jpg)
+![Banner](https://github.com/Valcor-01/valcor-01/blob/main/banner.png)
 
 # 👋 Hi, I'm Valcor
 “Where others see limits, I see another beginning.”
