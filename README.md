@@ -1,9 +1,16 @@
 
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" alt="Bottom Line" width="100%" />
+</div>
+
+
 ![Banner](https://github.com/Valcor-01/valcor-01/blob/main/banner.png)
 
-# 👋 Hi, I'm Valcor
+# <h1 align="center">👋 Hi, I'm Valcor
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&lines=Software+Engineer;Open+Source+Enthusiast;Always+Learning)](https://git.io/typing-svg)   
 > “Where others see limits, I see another beginning.”
+
+
 
 ## 💫 About Me:
 🖥️ I’m currently working on<br>Practical software solutions, AI applications, automation & API integrations<br><br>👯 I’m looking to collaborate on<br>Open-source software, AI/automation, API-driven applications & cybersecurity projects<br><br>🤝 I’m looking for help with<br>Advanced AI/ML, secure application architecture, backend development & cybersecurity<br><br>🌱 I’m currently learning<br>Python, AI/ML, REST APIs, backend development, application security & system design<br><br>💬 Ask me about<br>Python, APIs, application development, AI assistants, automation, cybersecurity & troubleshooting<br><br>⚡ Fun fact<br>I learn best by building — I like turning ideas into working applications and figuring out how systems work behind the scenes.
@@ -17,9 +24,13 @@
 
 <!-- Snake Game Repo View -->
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake.svg" />
+</picture>
+
 <div align="center">
-  <img src="https://profile-readme-generator.com/assets/snake.svg" alt="Snake animation" />
-</div>
 
 
 # 📊 GitHub Stats:
@@ -34,6 +45,15 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><h2 align="left">⚡Activity Graph:</h2>
 <img align="center" src="https://github-readme-activity-graph.vercel.app/graph?username=Valcor-01&theme=default"/>
 
+<!-- Pacman Game Repo View -->
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/abozanona/abozanona/output/pacman-contribution-graph.svg">
+</picture>
+
+
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=Valcor-01&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
@@ -45,3 +65,8 @@
 
 ---
 [![](https://komarev.com/ghpvc/?username=Valcor-01&icon=0&color=0)](https://visitcount.itsvg.in)
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" alt="Bottom Line" width="100%" />
+</div>
+
