@@ -85,15 +85,19 @@
     0%, 100% { transform: translate(-50%, -50%) translateY(0); }
     50% { transform: translate(-50%, -50%) translateY(8px); }
   }
-
-  .body-shape {
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(ellipse at 40% 35%, #7c3aed, #4c1d95);
-    border-radius: 50% 50% 45% 45%;
-    position: relative;
-    box-shadow: 0 8px 32px rgba(124, 58, 237, 0.3);
-    animation: idle 3s ease-in-out infinite;
+ .body-shape {
+  <div class="body-shape">
+  <div class="ear left"></div>
+  <div class="ear right"></div>
+  <div class="eye-patch left"><div class="eye"></div></div>
+  <div class="eye-patch right"><div class="eye"></div></div>
+  <div class="nose"></div>
+  <div class="mouth" id="mouth"></div>
+  <div class="cheek left"></div>
+  <div class="cheek right"></div>
+  <div class="paw left"></div>
+  <div class="paw right"></div>
+</div>   
   }
 
   @keyframes idle {
@@ -101,27 +105,59 @@
     50% { transform: translateY(-6px); }
   }
 
+  .ear {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background: #2d2d2d;
+    border-radius: 50%;
+    top: -14px;
+  }
+  .ear.left { left: 12%; }
+  .ear.right { right: 12%; }
+
+  .ear::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #4a4a4a;
+    border-radius: 50%;
+    top: 8px;
+    left: 8px;
+  }
+
+  .eye-patch {
+    position: absolute;
+    width: 30px;
+    height: 34px;
+    background: #2d2d2d;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    top: 28%;
+  }
+  .eye-patch.left { left: 18%; transform: rotate(-15deg); }
+  .eye-patch.right { right: 18%; transform: rotate(15deg); }
+
   .eye {
     position: absolute;
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     background: #fff;
     border-radius: 50%;
-    top: 35%;
+    top: 10px;
+    left: 9px;
     animation: blink 4s infinite;
   }
-  .eye.left { left: 28%; }
-  .eye.right { right: 28%; }
 
   .eye::after {
     content: '';
     position: absolute;
-    width: 8px;
-    height: 8px;
-    background: #1a1a2e;
+    width: 6px;
+    height: 6px;
+    background: #1a1a1a;
     border-radius: 50%;
-    top: 4px;
-    left: 4px;
+    top: 3px;
+    left: 3px;
   }
 
   @keyframes blink {
@@ -129,41 +165,61 @@
     97% { transform: scaleY(0.1); }
   }
 
+  .nose {
+    position: absolute;
+    width: 16px;
+    height: 12px;
+    background: #2d2d2d;
+    border-radius: 50%;
+    bottom: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .mouth {
     position: absolute;
     width: 20px;
     height: 10px;
-    border-bottom: 3px solid #fff;
+    border-bottom: 2px solid #2d2d2d;
     border-radius: 0 0 50% 50%;
-    bottom: 30%;
+    bottom: 25%;
     left: 50%;
     transform: translateX(-50%);
     transition: all 0.3s;
   }
   .mouth.sad-mouth {
     border-bottom: none;
-    border-top: 3px solid #fff;
+    border-top: 2px solid #2d2d2d;
     border-radius: 50% 50% 0 0;
   }
   .mouth.open {
     width: 14px;
     height: 14px;
-    background: #1a1a2e;
+    background: #2d2d2d;
     border: none;
     border-radius: 50%;
   }
-
   .cheek {
     position: absolute;
     width: 14px;
     height: 8px;
-    background: rgba(255, 100, 150, 0.4);
+    background: rgba(255, 150, 150, 0.35);
     border-radius: 50%;
-    top: 52%;
+    top: 55%;
   }
-  .cheek.left { left: 18%; }
-  .cheek.right { right: 18%; }
+  .cheek.left { left: 14%; }
+  .cheek.right { right: 14%; }
 
+  .paw {
+    position: absolute;
+    width: 28px;
+    height: 20px;
+    background: #2d2d2d;
+    border-radius: 50%;
+    bottom: -8px;
+  }
+  .paw.left { left: 15%; }
+  .paw.right { right: 15%; }   
   .ear {
     position: absolute;
     width: 24px;
@@ -182,10 +238,11 @@
     transform: translateX(-50%);
     width: 80px;
     height: 12px;
-    background: rgba(124, 58, 237, 0.2);
+    background: rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    animation: shadow-pulse 3s ease-in-out infinite;
+    animation: shadow-pulse 3s ease-in-out infinite;   
   }
+  <div class="title">🐼 Valcor-01's Panda 🐼</div>   
   @keyframes shadow-pulse {
     0%, 100% { transform: translateX(-50%) scaleX(1); }
     50% { transform: translateX(-50%) scaleX(0.85); }
@@ -346,26 +403,27 @@ const particles = document.getElementById('particles');
 
 const phrases = {
   happy: [
-    "I love you too! 💜", "Best dev ever!", "Let's build something cool!",
-    "You're my favorite human!", "Code is life! 🚀", "I feel electric today!"
+    "Bamboo time! 🎋", "You're my favorite human! 💜",
+    "Let's build something cool!", "I feel so refreshed!",
+    "Roll roll roll~ 🐼", "Code is life! 🚀"
   ],
   content: [
-    "Hmm... not bad.", "*happy humming*", "I could go for a snack...",
+    "*chomps bamboo*", "Hmm... not bad.", "I could nap a bit...",
     "The void is quiet today.", "01001000 01101001"
   ],
   hungry: [
-    "I'm starving... 🍕", "Feed me please!", "My energy is running low...",
-    "Error 404: nutrients not found", "*tummy rumbling*"
+    "I'm starving... 🎋", "Feed me bamboo!", "My tummy is rumbling...",
+    "Error 404: bamboo not found", "*tummy rumbling*"
   ],
   tired: [
     "So sleepy... 😴", "My circuits need rest...", "Zzz... zzz...",
-    "Reboot in 5... 4... 3...", "Batteries low..."
+    "Rolling into a ball...", "Batteries low..."
   ],
   sad: [
-    "I feel lonely... 💔", "Pet me please...", "The void is cold...",
-    "Do you still remember me?", "*sad beeping*"
+    "I feel lonely... 💔", "Pet me please...", "The bamboo is gone...",
+    "Do you still remember me?", "*sad panda noises*"
   ]
-};
+};   
 
 function updateBars() {
   document.getElementById('happinessBar').style.width = state.happiness + '%';
