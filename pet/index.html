@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Pet</title>
+<title>AI Pet - Panda</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -85,19 +85,16 @@
     0%, 100% { transform: translate(-50%, -50%) translateY(0); }
     50% { transform: translate(-50%, -50%) translateY(8px); }
   }
- .body-shape {
-  <div class="body-shape">
-  <div class="ear left"></div>
-  <div class="ear right"></div>
-  <div class="eye-patch left"><div class="eye"></div></div>
-  <div class="eye-patch right"><div class="eye"></div></div>
-  <div class="nose"></div>
-  <div class="mouth" id="mouth"></div>
-  <div class="cheek left"></div>
-  <div class="cheek right"></div>
-  <div class="paw left"></div>
-  <div class="paw right"></div>
-</div>   
+
+  .body-shape {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at 40% 35%, #ffffff, #e8e8e8);
+    border-radius: 50% 50% 45% 45%;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    animation: idle 3s ease-in-out infinite;
+    border: 3px solid #2d2d2d;
   }
 
   @keyframes idle {
@@ -199,6 +196,7 @@
     border: none;
     border-radius: 50%;
   }
+
   .cheek {
     position: absolute;
     width: 14px;
@@ -219,17 +217,7 @@
     bottom: -8px;
   }
   .paw.left { left: 15%; }
-  .paw.right { right: 15%; }   
-  .ear {
-    position: absolute;
-    width: 24px;
-    height: 36px;
-    background: #4c1d95;
-    border-radius: 50% 50% 0 0;
-    top: -10px;
-  }
-  .ear.left { left: 20%; transform: rotate(-15deg); }
-  .ear.right { right: 20%; transform: rotate(15deg); }
+  .paw.right { right: 15%; }
 
   .shadow {
     position: absolute;
@@ -240,9 +228,8 @@
     height: 12px;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    animation: shadow-pulse 3s ease-in-out infinite;   
+    animation: shadow-pulse 3s ease-in-out infinite;
   }
-  <div class="title">🐼 Valcor-01's Panda 🐼</div>   
   @keyframes shadow-pulse {
     0%, 100% { transform: translateX(-50%) scaleX(1); }
     50% { transform: translateX(-50%) scaleX(0.85); }
@@ -343,7 +330,7 @@
 
 <div class="container">
   <div class="speech" id="speech"></div>
-  <div class="title">✨ Valcor-01's AI Pet ✨</div>
+  <div class="title">🐼 Valcor-01's Panda 🐼</div>
 
   <div class="pet-area" id="petArea">
     <div class="particles" id="particles"></div>
@@ -351,11 +338,14 @@
       <div class="body-shape">
         <div class="ear left"></div>
         <div class="ear right"></div>
-        <div class="eye left"></div>
-        <div class="eye right"></div>
+        <div class="eye-patch left"><div class="eye"></div></div>
+        <div class="eye-patch right"><div class="eye"></div></div>
+        <div class="nose"></div>
         <div class="mouth" id="mouth"></div>
         <div class="cheek left"></div>
         <div class="cheek right"></div>
+        <div class="paw left"></div>
+        <div class="paw right"></div>
       </div>
     </div>
     <div class="shadow"></div>
@@ -373,13 +363,13 @@
       <div class="stat-bar"><div class="stat-fill energy" id="energyBar" style="width:90%"></div></div>
     </div>
     <div class="stat">
-      <div class="stat-label">Full</div>
+      <div class="stat-label">Bamboo</div>
       <div class="stat-bar"><div class="stat-fill fullness" id="fullnessBar" style="width:70%"></div></div>
     </div>
   </div>
 
   <div class="actions">
-    <button class="btn" onclick="feedPet()"><span class="emoji">🍕</span>Feed</button>
+    <button class="btn" onclick="feedPet()"><span class="emoji">🎋</span>Feed</button>
     <button class="btn" onclick="playPet()"><span class="emoji">🎾</span>Play</button>
     <button class="btn" onclick="sleepPet()"><span class="emoji">😴</span>Sleep</button>
     <button class="btn" onclick="talkPet()"><span class="emoji">💬</span>Talk</button>
@@ -423,7 +413,7 @@ const phrases = {
     "I feel lonely... 💔", "Pet me please...", "The bamboo is gone...",
     "Do you still remember me?", "*sad panda noises*"
   ]
-};   
+};
 
 function updateBars() {
   document.getElementById('happinessBar').style.width = state.happiness + '%';
@@ -447,7 +437,7 @@ function updateMood() {
     text = 'Feeling lonely... 💔';
   } else if (state.fullness < 30) {
     mood = 'hungry';
-    text = 'Getting hungry... 🍕';
+    text = 'Getting hungry... 🎋';
   } else if (state.energy < 30) {
     mood = 'tired';
     text = 'Running low on energy... 😴';
@@ -496,8 +486,8 @@ function petPet() {
   state.happiness = Math.min(100, state.happiness + 8);
   state.energy = Math.min(100, state.energy + 2);
   animatePet('happy');
+  spawnParticle('🐼');
   spawnParticle('💜');
-  spawnParticle('✨');
   showSpeech(phrases.happy[Math.floor(Math.random() * phrases.happy.length)]);
   mouth.classList.add('open');
   setTimeout(() => mouth.classList.remove('open'), 400);
@@ -510,7 +500,7 @@ function feedPet() {
   state.fullness = Math.min(100, state.fullness + 25);
   state.happiness = Math.min(100, state.happiness + 5);
   animatePet('bounce');
-  spawnParticle('🍕');
+  spawnParticle('🎋');
   spawnParticle('😋');
   showSpeech('Yummy! *nom nom*');
   mouth.classList.add('open');
@@ -530,8 +520,8 @@ function playPet() {
   state.happiness = Math.min(100, state.happiness + 15);
   state.fullness = Math.max(0, state.fullness - 5);
   animatePet('happy');
-  spawnParticle('🎾');
-  spawnParticle('🎉');
+  spawnParticle('🎋');
+  spawnParticle('🐼');
   spawnParticle('⭐');
   showSpeech(phrases.happy[Math.floor(Math.random() * phrases.happy.length)]);
   updateBars();
@@ -579,8 +569,6 @@ setInterval(() => {
     showSpeech(pool[Math.floor(Math.random() * pool.length)]);
   }
 }, 3000);
-<button class="btn" onclick="feedPet()"><span class="emoji">🎋</span>Feed</button>   
-<div class="stat-label">Bamboo</div>   
 
 updateBars();
 updateMood();
